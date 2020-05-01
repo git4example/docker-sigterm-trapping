@@ -1,0 +1,1 @@
+# docker-sigterm-trapping
