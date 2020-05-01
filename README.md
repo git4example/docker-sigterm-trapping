@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # hello2parikshit/docker-sigterm-trapping [![](https://images.microbadger.com/badges/image/hello2parikshit/docker-sigterm-trapping.svg)](https://microbadger.com/images/hello2parikshit/docker-sigterm-trapping "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/hello2parikshit/docker-sigterm-trapping.svg)](https://microbadger.com/images/hello2parikshit/docker-sigterm-trapping "Get your own version badge on microbadger.com")
 
 To run the code, open a new terminal window and build the image:
