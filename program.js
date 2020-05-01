@@ -17,22 +17,15 @@ var server = http.createServer(function (req, res) {
   function shutdown(signal, value) {
     server.close(function () {
       console.log('server stopped by ' + signal);
-      console.log('sleeping 30');
-      sleep(300000, function() {
-        // executes after n second, and blocks the thread
-        console.log('sleeping done .. bye');
-      });      
+      console.log('sleeping 30s');
+      var stop = new Date().getTime();
+      var time = 30000;
+      while(new Date().getTime() < stop + time) {
+          ;
+      }
+      console.log('sleeping done .. bye');
       process.exit(128 + value);
     });
-  }
-  
-
-  function sleep(time, callback) {
-    var stop = new Date().getTime();
-    while(new Date().getTime() < stop + time) {
-        ;
-    }
-    callback();
   }
 
   Object.keys(signals).forEach(function (signal) {
