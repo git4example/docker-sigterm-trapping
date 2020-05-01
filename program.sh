@@ -11,6 +11,8 @@ my_handler() {
 # SIGTERM-handler
 term_handler() {
   if [ $pid -ne 0 ]; then
+    echo "sleep 30"
+    sleep 30
     kill -SIGTERM "$pid"
     wait "$pid"
   fi
