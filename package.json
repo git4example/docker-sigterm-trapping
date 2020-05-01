@@ -1,0 +1,19 @@
+{
+  "name": "docker-sigterm-trapping",
+  "version": "1.0.0",
+  "description": "docker-sigterm-trapping",
+  "main": "program.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hello2parikshit/docker-sigterm-trapping.git"
+  },
+  "author": "Parikshit Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hello2parikshit/docker-sigterm-trapping/issues"
+  },
+  "homepage": "https://github.com/hello2parikshit/docker-sigterm-trapping#readme"
+}
