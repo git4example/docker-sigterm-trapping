@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/hello2parikshit/docker-sigterm-trapping/issues"
   },
-  "homepage": "https://github.com/hello2parikshit/docker-sigterm-trapping#readme"
+  "homepage": "https://github.com/hello2parikshit/docker-sigterm-trapping#readme",
+  "dependencies": {}
 }
