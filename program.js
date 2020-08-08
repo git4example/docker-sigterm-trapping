@@ -7,7 +7,7 @@ var http = require('http');
 var server = http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('Hello World\n');
-  }).listen(3000, '0.0.0.0');console.log('server started');
+  }).listen(3000, '0.0.0.0');console.log('server started...');
   
   var signals = {
     'SIGINT': 2,
@@ -19,7 +19,7 @@ var server = http.createServer(function (req, res) {
       console.log('server stopped by ' + signal);
       console.log('sleeping 30s');
       var stop = new Date().getTime();
-      var time = 30000;
+      var time = 30000; // n second wait
       while(new Date().getTime() < stop + time) {
           ;
       }
