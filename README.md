@@ -2,23 +2,29 @@
 
 To run the code, open a new terminal window and build the image:
 
-    docker build -t hello2parikshit/docker-sigterm-trapping .
+```
+docker build -t hello2parikshit/docker-sigterm-trapping .
+```
 
 Run the container:
 
-    docker run -it --rm -p 3000:3000 --name="signal-bg-app" hello2parikshit/docker-sigterm-trapping 
-    
+```
+docker run -it --rm -p 3000:3000 --name="signal-bg-app" hello2parikshit/docker-sigterm-trapping 
+```
     
 Get the process ID for container : 
-    ```
-    docker ps
-    docker inspect <container_id> | grep -i pid
-    ```
+    
+```
+$ docker ps
+
+$ docker inspect <container_id> | grep -i pid
+```
    
 SIGTERM container process id :
-    ```
-    sudo kill -s SIGTERM <pid>
-    ```
+
+```
+$ sudo kill -s SIGTERM <pid>
+```
 
 Output : 
 
