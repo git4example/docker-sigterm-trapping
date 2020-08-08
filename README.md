@@ -29,7 +29,7 @@ $ sudo kill -s SIGTERM <pid>
 Output : 
 
 ```
-$ docker run -it --rm -p 3000:3000 --name="signal-bg-app" hello2parikshit/docker-sigterm-trapping
+$ docker run -it --rm -p 3000:3000 --name="signal-bg-app" hello2parikshit/docker-sigterm-trapping:30s
 server started
 ^@server stopped by SIGTERM
 sleeping 30s
