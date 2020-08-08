@@ -7,6 +7,27 @@ To run the code, open a new terminal window and build the image:
 Run the container:
 
     docker run -it --rm -p 3000:3000 --name="signal-bg-app" hello2parikshit/docker-sigterm-trapping 
+    
+    
+Get the process ID for container : 
+    ```
+    docker ps
+    docker inspect <container_id> | grep -i pid
+    ```
+   
+SIGTERM container process id :
+    ```
+    sudo kill -s SIGTERM <pid>
+    ```
 
+Output : 
+
+```
+$ docker run -it --rm -p 3000:3000 --name="signal-bg-app" hello2parikshit/docker-sigterm-trapping
+server started
+^@server stopped by SIGTERM
+sleeping 30s
+sleeping done .. bye
+```
 
 Ref : https://medium.com/@gchudnov/trapping-signals-in-docker-containers-7a57fdda7d86
